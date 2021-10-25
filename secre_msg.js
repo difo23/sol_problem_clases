@@ -18,16 +18,11 @@ const traducir = (code) => {
     // [0, 0, 0, 0, 1] Bin -> 1 Dec
     //  0  1  2  3  4      index
    
-   
-    const reverse_code = code.reverse(); 
-    // [1, 0, 0, 0, 0]  -> 1 
-    //  0, 1, 2, 3, 4 index
 
     let sum = 0;
 
-    for(let pos = 0; pos < reverse_code.length ; ++pos ) {
-        console.log(reverse_code, reverse_code[pos])
-        sum += reverse_code[pos] * 2 ** pos;
+    for(let pos = code.length -1 ; pos >= 0; --pos ) {
+        sum += code[pos] * 2 ** (code.length -1 - pos );
     }
 
     return  mensaje[sum];
