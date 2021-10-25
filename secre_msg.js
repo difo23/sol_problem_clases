@@ -17,8 +17,6 @@ const traducir = (code) => {
     // code
     // [0, 0, 0, 0, 1] Bin -> 1 Dec
     //  0  1  2  3  4      index
-   
-
     let sum = 0;
 
     for(let pos = code.length -1 ; pos >= 0; --pos ) {
