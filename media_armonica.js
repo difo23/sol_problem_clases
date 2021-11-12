@@ -1,5 +1,5 @@
 
-
+// Problema 4 La armonica
 // a y b
 // 1/a y 1/b las inversas
 // ((1/a)+(1/b))/2 el promedio
@@ -16,5 +16,5 @@ const mediaArmonica = (a, b) => {
 }
 
 
-console.log(media_armonica(6, 9));
+console.log(mediaArmonica(6, 9));
 
